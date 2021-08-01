@@ -1,5 +1,9 @@
 
 #%%
+#!pip install pandas
+#!conda install pandas=0.22.0 
+#!conda  install -c quantopian zipline
+#%%
 import pandas as pd
 import csv
 import numpy as np
@@ -26,4 +30,6 @@ trading_days[trading_days == '2018-12-05']
 with open('trading_calendar.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(trading_days)
+# %%
+
 # %%

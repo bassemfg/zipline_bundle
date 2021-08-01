@@ -71,7 +71,8 @@ bench_series
 
 #%%
 # Run the tear sheet analysis
-analyze(result, bench_series)
+print(result)
+#analyze(result, bench_series)
 
 
 #%%
