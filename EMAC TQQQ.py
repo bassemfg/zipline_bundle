@@ -83,6 +83,8 @@ result.portfolio_value.plot()
 plt.show()
 #%%
 import  pyfolio as pf
+#import pandas as pd
+#result = pd.read_csv("emac_tqqq.csv")
 returns, positions, transactions = pf.utils.extract_rets_pos_txn_from_zipline(result)
 pf.create_full_tear_sheet(returns, positions=positions, transactions=transactions)#, benchmark_rets=benchmark_returns)
 #pf.create_returns_tear_sheet(returns)#, benchmark_rets=benchmark_returns)
