@@ -18,6 +18,7 @@ register(
         'C:\\Users\\basse\.zipline\data\\csvs',  # Directory where the formatted bar data is
     ),
     calendar_name='NYSE', # US equities default
+    minutes_per_day=1440, #https://github.com/quantopian/zipline/issues/2366
     start_session=start_session,
     end_session=end_session
 )
